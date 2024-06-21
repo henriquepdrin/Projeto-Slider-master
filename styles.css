@@ -42,11 +42,12 @@ header a {
     position: absolute;
 }
 
+
+
 .container .list .list-item img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
     filter: brightness(50%);
+    
 }
 
 .container .list .list-item .content {
@@ -88,6 +89,7 @@ header a {
     width: 269px;
     height: 62px;
     border-radius: 30px;
+    color: #000;
 }
 
 .container .list .list-item .buttons button:hover {
@@ -98,9 +100,8 @@ header a {
 }
 
 .container .list .list-item .buttons button:nth-child(2) {
-    background-color: transparent;
     border: 1px solid #eee;
-    color: #eee;
+    color: #000;
 }
 
 .container .list .list-item .buttons button:nth-child(2):hover {
@@ -130,6 +131,7 @@ header a {
     border-radius: 10px;
     filter: brightness(80%);
 }
+
 
 .container .thumb .content {
     position: absolute;
@@ -278,4 +280,185 @@ header a {
 
 .p2vant{
     margin-top: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px;
+    color: #000;
+    font-size: 15px;
+    border-radius: 15px;
+    height: 450px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 100px;
+}
+
+.modal-content2 {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 800px;
+    max-width: 600px;
+    color: #000;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content3 {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 800px;
+    max-width: 600px;
+    color: #000;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal4 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content4 {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 1000px;
+    border-radius: 15px;
+    height: 350px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bdiagrama{
+    margin-top: 15px;
+}
+
+.modal-content2 img{
+    width: 325px;
+    margin-left: 135px;
+    margin-top: 25px;
+}
+
+
+.container .list .list-item:nth-last-child(1) .content .topicos {
+    animation-delay: 1.6s;
+}
+.container .list .list-item:nth-last-child(1) .content .title, .container .list .list-item:nth-last-child(1) .content .topicos, .container .list .list-item:nth-last-child(1) .content .buttons {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+.container .list .list-item .topicos {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.brele{
+    color: #aaa;
 }

@@ -1,108 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Projeto IRC</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Entre em contato</a>
-            <a href="">Informações</a>
-        </nav>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Entre em contato</a>
+        <a href="">Informações</a>
+      </nav>
     </header>
-    
+
     <main class="container">
-        <img class="logosenai" src="./img/firjanlogo1.png">
-        <div class="list">
-            <div class="list-item">
-                <img src="./img/rascunhobackground.jpeg" alt="">
-                <div class="content">
-                    <h2 class="title">DESAFIO</h2>
-                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos consectetur molestias ut laudantium facilis fuga voluptatum architecto, eum nisi aspernatur officiis exercitationem error ipsam rem atque, maiores temporibus soluta vero.</p>
-                    <div class="buttons">
-                        <button>SOLUÇÃO</button>
-                    </div>
-                </div>
+      <img class="logosenai" src="./img/firjanlogo1.png" />
+      <div class="list">
+        <div class="list-item">
+          <img src="./img/rascunhobackground.jpeg" alt="" />
+          <div class="content">
+            <h2 class="title">DESAFIO</h2>
+            <p class="description">
+                A Eletrônica Plaza, localizada na Borda da Mata, MG, é conhecida por oferecer reparação e manutenção de eletrônicos na região. Visando a expansão de seu negócio, a empresa deseja introduzir-se no ramo da automação residencial. Assim sendo, nosso grupo se dispõe ao desafio de desenvolver um protótipo correspondente a demanda solicitada com um projeto tanto para automação residencial, quanto para automação industrial
+            </p>
+            <div class="buttons">
+              <button id="myBtn">SOLUÇÃO</button>
             </div>
-
-            <div class="list-item">
-                <img src="./img/rascunhobackground.jpeg" alt="">
-                <div class="content">
-                    <h2 class="title">SOLUÇÃO</h2>
-                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos consectetur molestias ut laudantium facilis fuga voluptatum architecto, eum nisi aspernatur officiis exercitationem error ipsam rem atque, maiores temporibus soluta vero.</p>
-                </div>
+          </div>
+          
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>
+                A proposta do projeto é desenvolver um sistema baseado nos conceitos de automação residencial aplicados à indústria metal mecânica, utilizando um microcontrolador ESP8266 com comunicação Wi-Fi e um relé SHIELD 5V para automatizar equipamentos.<br> Esta solução demonstra como a automação residencial pode também ser eficaz em ambientes industriais, proporcionando aos usuários uma maneira conveniente e eficiente de controlar remotamente seus maquinários.
+              </p>
             </div>
+          </div>
+        </div>
 
-            <div class="list-item">
-                <img src="./img/rascunhobackground.jpeg" alt="">
-                <div class="content">
-                    <h2 class="title">Vantagens</h2>
-                    <p class="description">Permite que o usuário monitore e modifique seus dispositivos atribuídos em tempo real.
-                        Permite que o usuário acesse seus dispositivos atribuídos de forma remota.
-                        Permite que o usuário acesse seus dispositivos atribuídos de forma remota.
-                    </p>
-                    <div class="buttons">
-                        <p>Confira </p>
-                    </div>
-                </div>
+        <div class="list-item">
+          <img src="./img/rascunhobackground.jpeg" alt="" />
+          <div class="content">
+            <h2 class="title">COMPONENTES</h2>
+            <p class="description">
+              Confia abaixo, os dois principais componentes que foram utilizados
+              no Projeto IRC.
+            </p>
+            <div class="buttons">
+              <button id="espbutton">ESP8266</button>
+              <button class="brele" id="relebutton">RELÉ 5V</button>
+              <button id="diagramabutton" class="bdiagrama">DIAGRAMA</button>
             </div>
+          </div>
 
-            <div class="list-item">
-                <img src="./img/rascunhobackground.jpeg" alt="">
-                <div class="content">
-                    <h2 class="title">PROJETO IRC</h2>
-                    <p class="description">Nosso projeto tem como objetivo automatizar a indústria metal mecânica utilizando conceitos de automação residencial, demonstrando que é possível melhorar o ambiente laboral para torná-lo mais seguro, confiável e eficiente para os trabalhadores.
-                        Diante disso, a automação nos possibilita programar um ESP8266 para ativar e desativar máquinas de forma remota, otimizando a segurança e a produtividade.</p>
-                </div>
+          <div id="myModal2" class="modal2">
+            <!-- Modal content -->
+            <div class="modal-content2">
+              <span class="close">&times;</span>
+              <p class="paragrafo-esp">
+                ESP8266
+                Descrição: O ESP8266 é um microcontrolador com capacidade de conexão Wi-Fi, amplamente utilizado em projetos de IoT (Internet das Coisas). Ele permite conectar dispositivos a uma rede sem fio e controlar diversos componentes eletrônicos de forma remota.
+                
+                Processador: Tensilica L106, 80 MHz
+                Memória: 64 KB RAM (instruções), 96 KB RAM (dados)
+                Armazenamento: Suporta até 16 MB Flash
+                Conectividade: Wi-Fi 802.11 b/g/n
+                GPIOs: Até 17 pinos (PWM, I2C, SPI, ADC, UART)
+                Alimentação: 3.0V a 3.6V
+                Modos: AP, STA, Modo de Baixo Consumo (10 µA)
+                Protocolos: TCP/IP, HTTP, MQTT 
+                
+              </p>
+              <img src="./img/esp.png" alt="esp1">
             </div>
-         </div>
+          </div>
+        </div>
 
-         <div class="thumb">
-            <div class="thumb-item">
-                <img src="./img/img1.jpg" alt="">
-                <div class="content">
-                    <h3>Bali</h3>
-                    <p>Viste</p>
-                </div>
+        <div id="myModal3" class="modal3">
+            <!-- Modal content -->
+            <div class="modal-content3">
+              <span class="close">&times;</span>
+              <p>
+                Descrição: O módulo relé 5V é um dispositivo eletromecânico que permite controlar circuitos de alta potência com sinais de baixa potência, atuando como um interruptor controlado eletronicamente.
+
+                Tensão de Operação: 5V DC
+                Corrente: 70 mA (5V)
+                Capacidade de Comutação: 250V AC/10A, 30V DC/10A
+                Isolamento: Opto-isolado
+                Tempo de Resposta: Abertura (10 ms), Fechamento (5 ms)
+                Dimensões: 50mm x 26mm x 19mm
+                Componentes: Bobina, Contatos (NO, NC), Diodo de Proteção, Optoacoplador 
+                 
+                
+              </p>
+              <img src="./img/rele.png">
             </div>
+          </div>
 
-            <div class="thumb-item">
-                <img src="./img/img2.jpg" alt="">
-                <div class="content">
-                    <h3>Paris</h3>
-                    <p>Viste</p>
-                </div>
+          <div id="myModal4" class="modal4">
+            <!-- Modal content -->
+            <div class="modal-content4">
+              <span class="close">&times;</span>
+              <img src="./img/diagrama.jpeg" class="imgdiagrama1">
             </div>
+          </div>
 
-            <div class="thumb-item">
-                <img src="./img/img3.jpg" alt="">
-                <div class="content">
-                    <h3>Roma</h3>
-                    <p>Viste</p>
+        <div class="list-item">
+          <img src="./img/rascunhobackground.jpeg" alt="" />
+          <div class="content">
+            <h2 class="title">Vantagens</h2>
+                <div class="topicos"
+                    <ul class="li1">CONTROLE REMOTO</ul>
+                    <ul class="li2">PROGRAMAÇÃO DE HORÁRIOS</ul>
+                    <ul class="li3">MONITORAMENTO REAL TIME</ul>
+                    <ul class="li4">NR-12</ul>
+                    <ul class="li5">ODS 9</ul>
                 </div>
-            </div>
+          </div>
+        </div>
 
-            <div class="thumb-item">
-                <img src="./img/img4.jpg" alt="">
-                <div class="content">
-                    <h3>Veneza</h3>
-                    <p>Viste</p>
-                </div>
-            </div>
-         </div>
+        <div class="list-item">
+          <img src="./img/rascunhobackground.jpeg" alt="" />
+          <div class="content">
+            <h2 class="title">PROJETO IRC</h2>
+            <p class="description">
+              Nosso projeto tem como objetivo automatizar a indústria metal
+              mecânica utilizando conceitos de automação residencial,
+              demonstrando que é possível melhorar o ambiente laboral para
+              torná-lo mais seguro, confiável e eficiente para os trabalhadores.
+              Diante disso, a automação nos possibilita programar um ESP8266
+              para ativar e desativar máquinas de forma remota, otimizando a
+              segurança e a produtividade.
+            </p>
+          </div>
+        </div>
+      </div>
 
-         <div class="arrows">
-            <button class="back"> < </button>
-            <button class="next"> > </button>
-         </div>
+      <div class="thumb">
+        <div class="thumb-item">
+          <img src="./img/numba1.jpg" alt="" />
+          <div class="content">
+            <h3>1</h3>
+            <p>Viste</p>
+          </div>
+        </div>
+
+        <div class="thumb-item">
+          <img src="./img/numba2.jpg" alt="" />
+          <div class="content">
+            <h3>2</h3>
+            <p>Viste</p>
+          </div>
+        </div>
+
+        <div class="thumb-item">
+          <img src="./img/numba3.png" alt="" />
+          <div class="content">
+            <h3>3</h3>
+            <p>Viste</p>
+          </div>
+        </div>
+
+        <div class="thumb-item">
+          <img src="./img/numba4.jpg" alt="" />
+          <div class="content">
+            <h3>4</h3>
+            <p>Viste</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrows">
+        <button class="back"><</button>
+        <button class="next">></button>
+      </div>
     </main>
     <script src="./scripts.js"></script>
-</body>
+
+  </body>
 </html>
