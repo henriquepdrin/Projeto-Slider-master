@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,6 +41,7 @@
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close">&times;</span>
+              <h3>Solução:</h3>
               <p>
                 A proposta do projeto é desenvolver um sistema baseado nos conceitos de automação residencial aplicados à indústria metal mecânica, utilizando um microcontrolador ESP8266 com comunicação Wi-Fi e um relé SHIELD 5V para automatizar equipamentos.<br> Esta solução demonstra como a automação residencial pode também ser eficaz em ambientes industriais, proporcionando aos usuários uma maneira conveniente e eficiente de controlar remotamente seus maquinários.
               </p>
@@ -48,6 +49,7 @@
           </div>
         </div>
 
+        
         <div class="list-item">
           <img src="./img/rascunhobackground.jpeg" alt="" />
           <div class="content">
@@ -58,7 +60,7 @@
             </p>
             <div class="buttons">
               <button id="espbutton">ESP8266</button>
-              <button class="brele" id="relebutton">RELÉ 5V</button>
+              <button id="relebutton" class="brele">RELÉ 5V</button>
               <button id="diagramabutton" class="bdiagrama">DIAGRAMA</button>
             </div>
           </div>
@@ -67,21 +69,10 @@
             <!-- Modal content -->
             <div class="modal-content2">
               <span class="close">&times;</span>
-              <p class="paragrafo-esp">
-                ESP8266
-                Descrição: O ESP8266 é um microcontrolador com capacidade de conexão Wi-Fi, amplamente utilizado em projetos de IoT (Internet das Coisas). Ele permite conectar dispositivos a uma rede sem fio e controlar diversos componentes eletrônicos de forma remota.
-                
-                Processador: Tensilica L106, 80 MHz
-                Memória: 64 KB RAM (instruções), 96 KB RAM (dados)
-                Armazenamento: Suporta até 16 MB Flash
-                Conectividade: Wi-Fi 802.11 b/g/n
-                GPIOs: Até 17 pinos (PWM, I2C, SPI, ADC, UART)
-                Alimentação: 3.0V a 3.6V
-                Modos: AP, STA, Modo de Baixo Consumo (10 µA)
-                Protocolos: TCP/IP, HTTP, MQTT 
-                
-              </p>
-              <img src="./img/esp.png" alt="esp1">
+              <h4 class="tituloesp">ESP8266</h4>
+              <h4>DESCRIÇÃO:</h4>
+              <p>O ESP8266 é um microcontrolador com capacidade de conexão Wi-Fi, amplamente utilizado em projetos de IoT (Internet das Coisas). Ele permite conectar dispositivos a uma rede sem fio e controlar diversos componentes eletrônicos de forma remota</p>
+              <img src="./img/esp.png">
             </div>
           </div>
         </div>
@@ -90,18 +81,9 @@
             <!-- Modal content -->
             <div class="modal-content3">
               <span class="close">&times;</span>
-              <p>
-                Descrição: O módulo relé 5V é um dispositivo eletromecânico que permite controlar circuitos de alta potência com sinais de baixa potência, atuando como um interruptor controlado eletronicamente.
-
-                Tensão de Operação: 5V DC
-                Corrente: 70 mA (5V)
-                Capacidade de Comutação: 250V AC/10A, 30V DC/10A
-                Isolamento: Opto-isolado
-                Tempo de Resposta: Abertura (10 ms), Fechamento (5 ms)
-                Dimensões: 50mm x 26mm x 19mm
-                Componentes: Bobina, Contatos (NO, NC), Diodo de Proteção, Optoacoplador 
-                 
-                
+              <h4 class="titulorele">RELÉ 5V</h4>
+              <h4>DESCRIÇÃO:</h4>
+                <p> Módulo relé 5V é um dispositivo eletromecânico que permite controlar circuitos de alta potência com sinais de baixa potência, atuando como um interruptor controlado eletronicamente.
               </p>
               <img src="./img/rele.png">
             </div>
@@ -116,21 +98,86 @@
           </div>
 
         <div class="list-item">
-          <img src="./img/rascunhobackground.jpeg" alt="" />
+          <img class="background-img" src="./img/rascunhobackground.jpeg" alt="" />
           <div class="content">
-            <h2 class="title">Vantagens</h2>
-                <div class="topicos"
-                    <ul class="li1">CONTROLE REMOTO</ul>
-                    <ul class="li2">PROGRAMAÇÃO DE HORÁRIOS</ul>
-                    <ul class="li3">MONITORAMENTO REAL TIME</ul>
-                    <ul class="li4">NR-12</ul>
-                    <ul class="li5">ODS 9</ul>
+            <h2 class="title">Funcionalidade</h2>
+            <div class="description">
+                <p class="paragrafofuncionalidade">
+                  O ESP8266 foi programado para permitir o controle remoto de dispositivos eletrônicos. Quando um botão virtual é pressionado, ele envia um sinal ao relé, que habilita ou desabilita o dispositivo conectado. Essa funcionalidade é valiosa tanto na automação residencial quanto na industrial, proporcionando controle eficiente e conveniente dos equipamentos. O ESP8266 oferece segurança, praticidade e flexibilidade, permitindo que os usuários gerenciem dispositivos de qualquer lugar, otimizando tempo e recursos.
+                </p>
+                <div class="buttons">
+                  <a href="http://projetoirc.local/" target="_blank">
+                    <button>INTERFACE</button>
+                  </a>
                 </div>
+              </div>
           </div>
         </div>
 
         <div class="list-item">
-          <img src="./img/rascunhobackground.jpeg" alt="" />
+          <img class="background-img" src="./img/rascunhobackground.jpeg" alt="" />
+          <div class="content">
+            <h2 class="title">Vantagens</h2>
+            <div class="description">
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Controle Remoto
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      O acesso remoto aos dispositivos atribuídos transforma a maneira como trabalhamos e gerenciamos nossos recursos tecnológicos, oferecendo uma combinação de conveniência, flexibilidade e segurança essencial para o ambiente atual.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Monitoramento Real-Time
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Monitoramento em tempo real do status das maquinas
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      NR-12
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      ODS-09
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion. This is the fourth item's accordion body.
+                    </div>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+              
+          </div>
+        </div>
+
+        <div class="list-item">
+          <img class="background-img" src="./img/rascunhobackground.jpeg" alt="raskunho" />
           <div class="content">
             <h2 class="title">PROJETO IRC</h2>
             <p class="description">
@@ -140,45 +187,56 @@
               torná-lo mais seguro, confiável e eficiente para os trabalhadores.
               Diante disso, a automação nos possibilita programar um ESP8266
               para ativar e desativar máquinas de forma remota, otimizando a
-              segurança e a produtividade.
+              segurança e a produtividade.<h3 class="description"><br>Alunos:</h3><br><p class="description"> Pedro Henrique Felix<br> Daniel de Paula<br> Miguel Soares<br> Henri Coelho<br> Vinicios da Silva<br></p>
             </p>
           </div>
         </div>
       </div>
 
+      
+
       <div class="thumb">
         <div class="thumb-item">
-          <img src="./img/numba1.jpg" alt="" />
+          <img src="./img/THUMB1.png" alt="" />
           <div class="content">
             <h3>1</h3>
-            <p>Viste</p>
+
           </div>
         </div>
 
         <div class="thumb-item">
-          <img src="./img/numba2.jpg" alt="" />
+          <img src="./img/THUMB2.png" alt="" />
           <div class="content">
             <h3>2</h3>
-            <p>Viste</p>
+
           </div>
         </div>
 
         <div class="thumb-item">
-          <img src="./img/numba3.png" alt="" />
+          <img src="./img/THUMB3.png" alt="" />
           <div class="content">
             <h3>3</h3>
-            <p>Viste</p>
+
           </div>
         </div>
 
         <div class="thumb-item">
-          <img src="./img/numba4.jpg" alt="" />
+          <img src="./img/THUMB4.png" alt="" />
           <div class="content">
             <h3>4</h3>
-            <p>Viste</p>
+
+          </div>
+        </div>
+
+        <div class="thumb-item">
+          <img src="./img/THUMB5.png" alt="" />
+          <div class="content">
+            <h3>5</h3>
+  
           </div>
         </div>
       </div>
+      
 
       <div class="arrows">
         <button class="back"><</button>
@@ -186,6 +244,6 @@
       </div>
     </main>
     <script src="./scripts.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
