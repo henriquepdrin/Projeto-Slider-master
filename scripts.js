@@ -54,4 +54,5 @@ setupModal('myModal', 'myBtn', 'close');
 setupModal('myModal2', 'espbutton', 'close');
 setupModal('myModal3', 'relebutton', 'close');
 setupModal('myModal4', 'diagramabutton', 'close');
+setupModal('myModal5', 'canvasbutton', 'close');
 
