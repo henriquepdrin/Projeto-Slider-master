@@ -16,7 +16,7 @@ body {
     
 
 }
- 
+
 header {
 
     height: 50px;
@@ -40,9 +40,11 @@ header a {
     margin-top: 2px;
     overflow: hidden;
     box-sizing: border-box;
-    margin-right: 750px;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100%;
 }
- 
+
 .container .list .list-item {
     width: 100%;
     height: 100%;
@@ -53,7 +55,7 @@ header a {
 
 .container .list .list-item img {
     object-fit: cover;
-    filter: brightness(75%);
+
     
 }
 
@@ -447,11 +449,7 @@ header a {
     margin-top: 15px;
 }
 
-.modal-content2 img{
-    width: 325px;
-    margin-left: 135px;
-    margin-top: 25px;
-}
+
 
 
 .container .list .list-item:nth-last-child(1)
@@ -532,5 +530,37 @@ a{
     width: 700px;
     height: 390px;
     border-radius: 15px;
-    filter: brightness(5%);
+}
+
+.d-block1{
+    width: 280px;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+.d-block2{
+    width: 520px;
+    margin-left: 15px;
+}
+
+.d-block3{
+    width: 520px;
+    margin-left: 15px;
+}
+
+.d-block4{
+    width: 280px;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+.d-block5{
+    width: 520px;
+    margin-left: 30px;
+    margin-top: 1px;
+}
+
+.d-block6{
+    width: 520px;
+    margin-left: 15px;
 }
